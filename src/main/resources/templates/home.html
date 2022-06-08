@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome!</h1>
+    </header>
+    <main>
+        <div>
+            Click <a th:href="@{/hello}">here</a> to see a greeting!
+        </div>
+        <div>
+            Click <a th:href="@{/api/v1/customers}">here</a> to see a list of Customers!
+        </div>
+    </main>
+</body>
+</html>
