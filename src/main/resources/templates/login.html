@@ -9,13 +9,15 @@
     <div class="main">
         <form th:action="@{/auth/login}" method="post">
             <div>
-                <input type="text" name="username" placeholder="Username">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Username" autofocus>
             </div>
             <div>
-                <input type="password" name="password" placeholder="Password" required>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Password" required>
             </div>
             <div>
-                <input type="submit" value="Sign In">
+                <button type="submit">Sing In</button>
             </div>
         </form>
     </div>
